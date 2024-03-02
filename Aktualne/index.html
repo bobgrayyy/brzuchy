@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="Brzuchomapa" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Mapa.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet"> 
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <title>Brzuchotwórcy Web</title>
+</head>
+<body>
+<!--< <img src="bg4.svg"></div>-->
+<img src="Layouts/0_Background.svg" id="background" > 
+
+    <div class="row" id="row"> 
+        <div class="element" data-type="refresh" style="width: 160px!important;">
+            <img src="Layouts/Refresh.svg" id="refresh" style=" height: 184px;"></div>
+
+         <div class="element" data-type="kawa" style="width: 160px!important;">
+            <img src="Layouts/Kawa.svg" id="kawa_herbata" style=" height: 264px;"></div>
+
+         <div class="element" data-type="wino" style="width: 160px!important;" >
+            <img src="Layouts/Wino.svg" id="wino" style="height:240px;"></div>
+
+        <div class="element" data-type="lody"> 
+            <img src="Layouts/Lody.svg" id="lody" style="height:100%;"></div>
+
+        <div class="element" data-type="wypieki" style="width: 160px!important;"> 
+            <img src="Layouts/Wypieki.svg" id="wypieki" style="height:176px;"></div>
+
+        <div class="element"  data-type="Pizza"> 
+            <img src="Layouts/Pizza.svg" id="pizza" style="height: 100%;"></div>
+
+        <div class="element" data-type="ramen" >
+            <img src="Layouts/Ramen.svg" id="ramen" style="height: 100%;"></div>
+
+        <div class="element" data-type="sushi">
+            <img src="Layouts/Sushi.svg" id="sushi" style="height: 85%;"></div>
+
+        <div class="element" data-type="slodycze" >
+            <img src="Layouts/Słodycze.svg" id="slodycze" style="height: 85%;"></div>
+
+        <div class="element" data-type="lokalne">
+            <img src="Layouts/Lokalne.svg" id="lokalne" style="height: 85%;">
+        </div>
+        <div class="element" data-type="pasta">
+            <img src="Layouts/Pasta.svg" id="pasta" style="height: 90%;">
+        </div>
+        <div class="element" data-type="owoce_morza">
+            <img src="Layouts/OwoceMorza.svg" id="owoce_morza" style="height: 85%;">
+        </div>
+        <div class="element" data-type="burgery" style="width: 200px!important;" >
+            <img src="Layouts/Burger.svg" id="burgery" style="height: 75%;">
+        </div>
+        <div class="element" data-type="indyjskie">
+            <img src="Layouts/Indyjskie.svg" id="indyjskie" style="height: 85%;"></div>
+
+        <div class="element" data-type="sniadanie">
+            <img src="Layouts/Śniadanie.svg" id="sniadanie" style="height: 85%;"></div>
+
+        <div class="element" data-type="meksykanskie">
+            <img src="Layouts/Meksykańskie.svg" id="meksykanskie" style="height: 85%;"></div>
+
+        <div class="element" data-type="kanapki">
+            <img src="Layouts/Kanapka.svg" id="kanapki" style="height: 85%;"></div>
+
+        <div class="element" data-type="gruzinskie">
+        <img src="Layouts/Gruzińskie.svg" id="gruzinskie" style="height: 85%;"></div>
+
+        <div class="element" data-type="warzywa_grzyby">
+            <img src="Layouts/Warzywa grzyby.svg" id="warzywa_grzyby" style="height: 85%;"></div>
+
+        <div class="element" data-type="inne">
+            <img src="Layouts/Inne.svg" id="inne" style="height: 85%;"></div>
+
+    
+    </div>
+
+
+
+        <div id="map_box">     
+            <div id="mapa"></div>
+        </div>
+
+
+      
+    <div id="listamiast">
+        <div class="miasta">
+             <p id="Krakow" class="button left-aligned"><span class="right-aligned">Kraków</span></p>
+            <p id="inny" class="button right-aligned"><span class="left-aligned">Europa </span></p>
+        </div>
+
+        <div class="miasta">
+            <p id="Trojmiasto" class="button left-aligned">Trójmiasto</p>
+            <p id="Warszawa" class="button right-aligned">Warszawa</p>
+       </div>
+
+       <div class="miasta"> 
+            <p id="Lodz" class="button left-aligned">Łódź</p>
+            <p id="Wroclaw" class="button left-aligned">Wrocław</p>
+            <p id="Poznan" class="button right-aligned">Poznań</p>
+       </div>
+    </div> 
+
+
+        </body>
+<script type="text/javascript" src="MapaJS.js">  
+</script>
+
+
+</html>

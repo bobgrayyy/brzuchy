@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bruchy backend</title>
+	<link rel="stylesheet" type="text/css" href="backendstyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <div id="column">
+	
+
+    <form id="bistroForm">
+         <div class="field">
+    <div class="label"><label for="name">Nazwa:</label></div>
+    <input type="text" class="input" id="name" required><br>
+    </div>
+
+    <div class="field">
+        <div class="label"><label for="type">Typ:</label></div>
+        <select id="type"  class="input"  required>
+        <option value="-" disabled selected>Wybierz kuchnię</option>
+        <option value="kawa">Kawa/herbata</option>
+        <option value="wino">Wino</option>
+        <option value="lody">Lody</option>
+        <option value="wypieki">Wypieki</option>
+        <option value="pizza">Pizza</option>
+        <option value="ramen">Ramen</option>
+        <option value="sushi">Sushi</option>
+        <option value="slodycze">Słodycze</option>
+        <option value="lokalne">Lokalne</option>
+        <option value="pasta">Pasta</option>
+        <option value="owoce_morza">Owoce morza</option>
+    </select></div>
+
+    <div class="field">
+	<div class="label"><label for="lat">Szerokość geograficzna (lat):</label></div>
+    <input type="text" class="input" id="lat" required><br>
+    </div>
+
+    <div class="field">
+    <div class="label"><label  for="lon">Długość geograficzna (lon):</label></div>
+    <input type="text" class="input" id="lon" required><br>
+    </div>
+
+    <div class="field">
+    <div class="label"><label  for="link">Link:</label></div>
+    <input type="text" class="input" id="link" required><br>
+    </div>
+
+
+    <button type="button" class="field button" onclick="addBistro()">Dodaj Bistro</button>
+</form>
+</div>
+<script type="text/javascript" src="dodaj_bistro.js"></script>
+
+
+</body>
+</html>
